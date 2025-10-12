@@ -99,3 +99,40 @@ header .row-flex{
     font-size: small;
 }
 
+/* slider */
+.slider {
+    width: 100vw;
+    overflow: hidden;
+    aspect-ratio: 3.18/1;
+    position: relative;
+
+}
+
+.slider-items {
+    position: relative;
+    transition: var(--main-transition);
+}
+.slider-item {
+    position: absolute;
+}
+.slider-item img {
+    width: 100vw;
+}
+
+.slider-arrow {
+    position: absolute;
+    z-index: 1;
+}
+.slider-arrow i {
+    cursor: pointer;
+    font-size: larger;
+
+}
+.slider-arrow{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
